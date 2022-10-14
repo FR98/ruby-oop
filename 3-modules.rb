@@ -10,7 +10,7 @@ end
 
 class Human
     include Scientist
-    include Smart # Prepend ignores the overwriting of methods
+    prepend Smart # Prepend ignores the overwriting of methods
     attr_accessor :name
 
     def run
